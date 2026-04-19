@@ -59,6 +59,7 @@
 }
 
 .card-title {
+  padding-left: 10px;
   font-size: 18px;
   font-variation-settings: 'wght' var(--main-font-title-weight, 700);
 }
@@ -93,6 +94,8 @@
   object-fit: cover;
   object-position: center;
 }
+
+.image-filter-1 {}
 
 .card-footer {
   padding: 25px;
@@ -129,8 +132,6 @@
   font-size: 14px;
   font-weight: var(--main-font-text-weight);
 }
-
-
 
 .save-button {
   margin-bottom: 105px;
