@@ -23,4 +23,9 @@
           repeating-linear-gradient(90deg, #d3d3d3 0 2px, rgb(0 0 0 / 0) 2px 4px),
           repeating-linear-gradient(180deg, #d3d3d3 0 2px, rgb(0 0 0 / 0) 2px 4px),
           linear-gradient(180deg, #e7e7e7 0%, #e7e7e7 0.01%, #1a1a1a 100%);
+
+  --heart-core-color: #fff;
+  --heart-contour-color: #000;
+  --heart-main-body-color: #FF0000;
+  --heart-sparks-color: #FF0000;
 }

@@ -148,9 +148,28 @@
   justify-content: end;
 }
 
-.card__icon-button {}
+.card__icon-button {
+  background-color: var(--background-color);
+  border: none;
+}
 
 .like-icon {}
+
+.heart {}
+
+.contour {}
+
+.main-body {
+  fill: none;
+}
+
+.core {
+  fill: none;
+}
+
+.sparks {
+  opacity: 0;
+}
 
 .card__like-button {
   width: 130px;
