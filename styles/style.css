@@ -303,6 +303,9 @@
 }
 
 .floppy-svg {
+  position: relative;
+  mix-blend-mode: difference;
+  fill: #fff;
   width: 21px;
   height: 21px;
   object-fit: contain;
