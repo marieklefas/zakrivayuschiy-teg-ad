@@ -6,4 +6,21 @@
 
   --main-font-text-weight: 400;
   --main-font-title-weight: 700;
+
+  --section-max-width: 700px;
+
+  /* --breakpoint: 500px;
+  --breakpoint-simulation: (100vw - var(--breakpoint));
+  clamp(0px, var(--breakpoint-simulation) * 1000, 86%); */
+
+  --background-color: #fff;
+  --text-color: #000;
+  --border-color: #000;
+
+  --background-gradient: linear-gradient(180deg, #E7E7E7 0%, #1A1A1A 100%);
+
+  --background-special-gradient: 
+          repeating-linear-gradient(90deg, #d3d3d3 0 2px, rgb(0 0 0 / 0) 2px 4px),
+          repeating-linear-gradient(180deg, #d3d3d3 0 2px, rgb(0 0 0 / 0) 2px 4px),
+          linear-gradient(180deg, #e7e7e7 0%, #e7e7e7 0.01%, #1a1a1a 100%);
 }
