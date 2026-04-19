@@ -93,9 +93,39 @@
   block-size: 100%;
   object-fit: cover;
   object-position: center;
+  border-top: 2px solid var(--border-color);
+  border-bottom: 2px solid var(--border-color);
 }
 
 .image-filter-1 {}
+
+.image-filter-2 {
+  filter: sepia(80%);
+}
+
+.image-filter-3 {
+  filter: brightness(200%);
+}
+
+.image-filter-4 {
+  filter: contrast(100%);
+}
+
+.image-filter-5 {
+  filter: invert(0.7);
+}
+
+.image-filter-6 {
+  filter: hue-rotate(-90deg);
+}
+
+.image-filter-7 {
+  filter: blur(10px);
+}
+
+.image-filter-8 {
+  filter: sepia(1) contrast(2) brightness(200%);
+}
 
 .card-footer {
   padding: 25px;
