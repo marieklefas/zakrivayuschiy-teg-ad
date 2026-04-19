@@ -139,8 +139,34 @@
 }
 
 .button {
+  position: relative;
   border: 2px solid var(--border-color);
   background-color: var(--background-color);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:focus-visible {
+  box-shadow: 2px 2px 0 0 var(--border-color);
+  transition: box-shadow 0.3s ease;
+}
+
+.button::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: var(--border-color);
+  color: #fff;
+  transition: translate 0.5s ease-in-out;
+  translate: -100%;
+}
+
+.button:hover::before {
+  translate: 0%;
 }
 
 .card-buttons {
@@ -151,6 +177,10 @@
 .card__icon-button {
   background-color: var(--background-color);
   border: none;
+}
+
+.card__icon-button:focus {
+  outline: none;
 }
 
 .like-icon {}
@@ -177,9 +207,12 @@
 }
 
 .button__text {
+  position: relative;
+  mix-blend-mode: difference;
   font-family: var(--accent-font);
   font-size: 14px;
   font-weight: var(--main-font-text-weight);
+  color: #fff;
 }
 
 .save-button {
@@ -193,6 +226,9 @@
 }
 
 .floppy-svg {
+  /* position: relative;
+  mix-blend-mode: difference;
+  color: #fff; */
   width: 21px;
   height: 21px;
   object-fit: contain;
@@ -217,6 +253,7 @@
   letter-spacing: 0;
   line-height: 150%;
   text-transform: uppercase;
+  overflow: hidden;
 }
 
 .dialog[open]::backdrop {
@@ -232,11 +269,9 @@
 
 .close-button {
   grid-column: 1 / -1;
-  width: 293px;
-  height: 38px;
+  width: 289px;
+  height: 34px;
 }
-
-.lose-button-text {}
 
 
 /* Для мобильной версии */
