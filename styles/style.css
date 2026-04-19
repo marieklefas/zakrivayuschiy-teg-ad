@@ -34,6 +34,7 @@
   align-items: center;
   gap: 20px;
   font-family: var(--accent-font);
+  text-transform: uppercase;
   margin-top: 100px;
   margin-bottom: 100px;
   height: 368px;
@@ -59,8 +60,10 @@
 }
 
 .card-title {
-  padding-left: 10px;
+  padding: 4px 10px 6px;
   font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
   font-variation-settings: 'wght' var(--main-font-title-weight, 700);
 }
 
@@ -143,6 +146,8 @@
   grid-column: -1 / 1;
   display: grid;
   gap: 27px;
+  line-height: 21px;
+  letter-spacing: 0%;
 }
 
 .button {
@@ -292,8 +297,10 @@
   mix-blend-mode: difference;
   font-family: var(--accent-font);
   font-size: 14px;
-  font-weight: var(--main-font-text-weight);
+  font-weight: var(--main-font-text-weight, 400);
   color: #fff;
+  line-height: 90%;
+  letter-spacing: 0%;
 }
 
 .save-button {
